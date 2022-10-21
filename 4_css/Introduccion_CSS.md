@@ -28,7 +28,7 @@ La apariencia de una pagina web es muy importante, ya que en gran medida esto es
 
 Una organización conocida como *El grupo de trabajo CSS* ayuda a mantener las especificaciones CSS actuales; podés seguir su trabajo en el [sitio del World Wide Web Consortium](https://www.w3.org/Style/CSS/members){:target="_blank"}.
 
-En esta lección, agregaremos estilos a nuestra página para diseñar una tarjeta de producto y aprenderemos más sobre varios conceptos de CSS: la cascada, la herencia y el uso de selectores, posicionamiento y uso de CSS para estilizar una página.
+En esta lección, agregaremos estilos a nuestra página web y aprenderemos más sobre varios conceptos de CSS: la cascada, la herencia y el uso de selectores, posicionamiento y uso de CSS para estilizar una página.
 
 ## Requisito previo:
 
@@ -46,18 +46,18 @@ Las hojas de estilo en cascada incorporan la idea de que los estilos 'se mueven 
 
 Para entender mejor esto, empecemos por cambiar algún estilo en nuestra página web. En este caso, queremos que el título sea de color rojo, y no negro como está ahora.
 
-Para hacer esto, ubiquemos el *encabezado* **Detalle de producto** en nuestro archivo HTML. El encabezado debe estar en la primera linea dentro de `<body>`, y debe estar en una etiqueta `<h1>`:
+Para hacer esto, ubiquemos el *encabezado* con contenido **Hidratación Basal** en nuestro archivo HTML:
 
 ```html
-<h1>Detalle de Producto</h1>
+<h1>Hidratación Basal</h1>
 ```
 
-Las etiquetas `<h1>` se muestran de color negro en el navegador. Para cambiar el color, podemos agregar un **Atributo** a la etiqueta. Los atributos nos permiten modificar la apariencia o el comportamiento de los elementos, y siempre se se agregan en **la etiqueta de apertura**. Para cambiar el estilo (en este caso, solo el color), usamos el atributo `style`.
+Las etiquetas `<h1>` se muestran de color negro en el navegador. Para cambiar el color, podemos agregar un **Atributo** a la etiqueta. Los atributos nos permiten modificar la apariencia o el comportamiento de los elementos, y siempre se agregan en **la etiqueta de apertura**. Para cambiar el estilo (en este caso, solo el color), usamos el atributo `style`.
 
 Modificá la linea donde se encuentra la etiqueta `<h1>`, para que quede así:
 
 ```html
-<h1 style="color: red">Detalle de Producto</h1>
+<h1 style="color: red">Hidratación Basal</h1>
 ```
 
 {: .concept }
@@ -68,7 +68,7 @@ Los atributos siempre van en la etiqueta de apertura y tienen un nombre y un val
 
 Si hiciste todo bien, deberias haber notado que el color del encabezado cambió, y ahora es rojo. Lo que hacemos con el atributo `style`, es decirle al navegador que aplique el estilo indicado entre comillas, que está escrito en CSS.
 
-De esta manera podemos seguir estilizando la página web cambiando colores y otras propiedades. Sinembargo, esto implica agregar atributos a todos los elementos del HTML, y esto resulta muy poco práctico y dificil de comprender cuando nuestro documento se hace más grande.
+De esta manera podemos seguir estilizando la página web cambiando colores y otras propiedades. Sin embargo, esto implica agregar atributos a todos los elementos del HTML, y esto resulta muy poco práctico y difícil de comprender cuando nuestro documento se hace más grande.
 
 Para resolver este problema, usamos "Hojas de estilo externas". Se tratan de archivos en los que podemos escribir todos los estilos que queremos aplicar.
 
@@ -102,10 +102,7 @@ La cabecera del archivo HTML debería quedar así:
 
 ```html
 <head>
-  <title>Diseño de Interfaces</title>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora de hidratación</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 ```
@@ -120,11 +117,11 @@ h1 {
 }
 ```
 
-✅ ¿Qué color se muestra en tu aplicación web? ¿Por qué? (explicación mas abajo)
+✅ ¿Qué colores cambiaron tu aplicación web? ¿Por qué? (explicación mas abajo).
 
-Si hiciste todo bien, no debería haber cambiado nada en la página.
+Si hiciste todo bien, no debería haber cambiado el titulo de la calculadora, pero si el titulo de la explicación del calculo.
 
-Al escribir `h1{  }`, estamos diciendo que todos los estilos que escribamos entre las llaves `{}` se deben aplicar a todos los elementos `h1` en el HTML. En este caso, solo tenemos un elemento `h1`, al que en una actividad anterior le pusimos un estilo en línea para que sea rojo, directo en el HTML.
+Al escribir `h1{  }`, estamos diciendo que todos los estilos que escribamos entre las llaves `{}` se deben aplicar a todos los elementos `h1` en el HTML. En este caso, tenemos dos elementos `h1`, pero a uno de ellos le pusimos un estilo en línea para que sea rojo, directo en el HTML.
 
 {: .concept }
 `h1{  }` es un **SELECTOR** de etiquetas, porque selecciona todas las etiquetas `h1` del HTML para aplicarles los estilos correspondientes. Se puede usar para seleccionar cualquier etiqueta, por ejemplo: `div{  }`, o `h2{  }`
@@ -140,7 +137,7 @@ h1 {
 
 ```html
 <!-- EN EL HTML, DECIMOS QUE EL COLOR ES ROJO -->
-<h1 style="color: red">Detalle de Producto</h1>
+<h1 style="color: red">Hidratación Basal</h1>
 ```
 
 Como decide el navegador cual de los dos colores aplicar?
@@ -152,7 +149,7 @@ Si borramos el estilo en línea que aplicamos, el navegador tomará lo que encue
 Probá dejando esta línea del HTML como estaba originalmente:
 
 ```html
-<h1>Detalle de Producto</h1>
+<h1>Hidratación Basal</h1>
 ```
 Si guardas todos los cambios y actualizas la página, deberías ver que el elemento h1 ahora es azul.
 
@@ -168,23 +165,19 @@ Ahora que tenemos la hoja de estilos preparada y ya entendemos como y donde escr
 En primer lugar, queremos cambiar la fuente del texto, esto es el tipo de letra de todo el texto en nuestra página. Para lograrlo, agregá el siguiente código el archivo CSS:
 
 ```css
-body {
- font-family: helvetica, arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body{
+    font-family: 'Montserrat', sans-serif;
 }
 ```
 Guardá los cambios y actualizá la página web para ver que pasó.
 
 Deberías haber notado un cambio en el tipo de letra.
 
-![fuente heredada](images/fuente-original.png)
-
-Así queda ahora:
-
-![fuente heredada](images/fuente-nueva.png)
-
 Logramos cambiar el tipo de letra utilizando la **propiedad** `font-family`.
 
-Pero, anteriormente habiamos dicho que para cambiar el estilo de un elemento HTML, usabamos un selector de etiquetas para seleccionar las etiquetas que queriamos cambiar. Para cambiar una etiqueta `h1`, utilizamos el selector `h1 {  }`.
+Pero, anteriormente habíamos dicho que para cambiar el estilo de un elemento HTML, usábamos un selector de etiquetas para seleccionar las etiquetas que queríamos cambiar. Para cambiar una etiqueta `h1`, utilizamos el selector `h1 {  }`.
 
 Entonces, por qué ahora utilizamos un selector `body {  }` para cambiar un elemento `h1`?
 
@@ -194,7 +187,7 @@ De esta manera, si miramos nuestro HTML y vemos una estructura así:
 
 ```html
 <body>
-  <h1>Detalle de Producto</h1>
+  <h1>Hidratación Basal</h1>
 </body>
 ```
 
@@ -223,32 +216,24 @@ Hasta ahora, en el archivo `style.css` solo aplicamos estilos a dos elementos HT
 
 Los selectores de etiqueta o elementos nos permiten aplicar estilos a los elementos, buscando por sus etiquetas en el archivo HTML. Por ejemplo, cuando usamos el selector `h1 {  }`, estamos seleccionando **TODOS** los elementos de tipo `h1` en el HTML.
 
-✅ Probá esto agregando otros elementos `h1` en el HTML. Todos deberían tener el mismo color. Luego podes agregar un elemento con otra etiqueta: `<h2>prueba<h2>`. Este no será afectado por los estilos en el selector `h1 {  }`.
-
 ### Actividad:
 {: .no_toc }
 
-Como tenemos un solo título en nuestra página, nos basta con usar ese selector para agregarle estilos. 
+Vamos a utilizar un selector de elementos para agregarle algunos estilos al `<body>` que queremos que se hereden en todos los elementos.
 
-Necesitamos centrar el texto en la pantalla, y darle un color mas atractivo.
-
-Por otro lado, podemos asignar el tipo de letra que queremos usar a la etiqueta `body`, para que todo el texto de la página sea igual.
+Necesitamos cambiar el color de fondo, el tipo de letra y el color del texto para toda la pagina.
 
 Asegurate de que tu archivo CSS quede de la siguiente manera (puede que tengas que reemplazar cosas las pruebas que vinimos haciendo):
 
 ```css
-body {
-  font-family: helvetica, arial, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-h1 {
-  color: #3a241d;
-  text-align: center;
+body{
+    background: #f6f5f7; 
+    font-family: 'Montserrat', sans-serif;
+    color: #3E363F;
 }
 ```
-
-✅ Cual es la propiedad que usamos para centrar el texto en la página?
-
 ---
 
 Pareciera que con este tipo de selector podemos estilizar toda la página, pero el problema es que no podemos seleccionar un solo elemento específico, solo podemos seleccionar **todos** los `h1` o **todos** los `div`, y para continuar necesitamos aplicar estilos solo a un par de elementos de tipo `div`, pero no a los demás.
@@ -281,220 +266,304 @@ En el ejemplo vemos como se utiliza el id para nombrar elementos, pero es import
 ### Actividad:
 {: .no_toc }
 
-En el archivo HTML, ya incluimos algunos elementos con identificadores. Estos elementos son los padres de las imagenes que queremos agrupar a la izquierda y a la derecha. Recordemos el diseño que queremos lograrar:
+Necesitamos centrar todo el contenido en la pagina, vertical y horizontalmente. Ya agregamos un div en el HTML, pero nos falta agregarle un id para poder identificarlo.
 
-![diseño terminado](images/disenho-terminado.png)
+Para lograr esto, vamos a agregarle el atributo `id=contenedor` al `div` que encapsula todo el contenido, el HTML debe quedar así:
 
-Para lograr esto, vamos a alinear el `div` con `id=tablero-izquierdo` a la izquierda, y el `div` con `id=tablero-derecho` a la derecha.
-
-Copia el siguiente código en el archivo CSS, debajo de lo último que hicimos:
-
-```css
-#tablero-izquierdo{
-  width: 25%;
-  position: absolute;
-  height: 100%;
-  padding: 10px;
-  left: 0px;
-}
-
-#tablero-derecho {
-  width: 25%;
-  position: absolute;
-  height: 100%;
-  padding: 10px;
-  right: 0px;
-}
+```html
+<body>
+  <div id="contenedor">
+      <div>
+          <div>
+              <h1>Hidratación Basal</h1>
+              <p >Completa todos los datos</p>
+              <input type="number" placeholder="Peso en kg" />
+              <p>* Debe completar todos los datos</p>
+              <button>Calcular</button>
+              <p>71cc/h</p>
+              <p>m+m/2 : 105cc/h</p>
+          </div>
+      </div>
+      <div>
+          <div>
+              <h1>¿Como se calcula?</h1>
+              <ul>
+                  <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                  <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                  <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</body>
 ```
 
-✅ Tratá de identificar en el HTML cuales son los elementos que estamos modificando. Cambia los ids y verifica que todo funcione igual.
+Ahora que tenemos un id en el `div`, podemos utilizarlo para seleccionar ese elemento y darle estilos. Copia este codigp debajo de lo ultimo que hiciste en el CSS:
+
+```css
+#contenedor{
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+```
 
 Utilizamos el selector de id escribiendo `#` seguido del nombre que le dimos al elemento, en este caso: `#tablero-izquierdo {  }`. Todos los estilos en ese selector, serán aplicados solo al `div` con ese ID.
 
 Lo que hacemos con este código es lo siguiente 
-* Utilizamos la propiedad `width` para fijar un ancho máximo para el div, en este caso de 25% de la pantalla.
-* La propiedad `height` nos permite fijar una altura específica, en este caso queremos que ocule todo el alto de la pantalla.
-* Finalmente, utilizamos las propuedades `right` y `left` para especificar los margenes derecho e izquierdo. Hacemos esto para que cada contenedor esté a un lado de la pantalla.
+* Utilizamos la propiedad `width` para fijar un ancho máximo para el div.
+* La propiedad `height` nos permite fijar una altura específica.
+* Finalmente, utilizamos las propiedades `position`, `inset` y `margin` centrar nuestro div vertical y horizontalmente.
 
-✅ Investigá para que usamos las otras propiedades.
+✅ Investigá como se usan estas propiedades para centrar el div, y cambia los valores para tratar de entender como funciona este posicionamiento.
 
-Aquí, colocaste estos tableros con posicionamiento absoluto en el extremo izquierdo y derecho de la pantalla, y utilizaste porcentajes para su ancho para que puedan escalar para pantallas móviles pequeñas.
+{: .concept }
+La propiedad `inset` es una forma de asignar el mismo valor a los 4 margenes (superior, inferior, derecho e izquierdo), al poner estos valores a 0 y la posición en `absolute`, podemos lograr que el dive quede centrado.
+
+---
+
+### Actividad:
+{: .no_toc }
+
+Vamos a seguir con el posicionamiento para dejar todo en su lugar, basándonos en el diseño de la sección de requerimientos.
+
+Nos falta que la sección del formulario y la de la explicación estén lado a lado. Para esto tenemos que seguir los mismos métodos usados para centrar el contenido. Necesitamos agregar identificadores a los `div` que encapsulan los las secciones que queremos modificar.
+
+Modifica el cuerpo del HTML para agregar los identificadores y que quede asi:
+
+```html
+<body>
+  <div id="contenedor">
+      <div id="calculadora">
+          <div>
+              <h1>Hidratación Basal</h1>
+              <p >Completa todos los datos</p>
+              <input type="number" placeholder="Peso en kg" />
+              <p>* Debe completar todos los datos</p>
+              <button>Calcular</button>
+              <p>71cc/h</p>
+              <p>m+m/2 : 105cc/h</p>
+          </div>
+      </div>
+      <div id="detalle">
+          <div>
+              <h1>¿Como se calcula?</h1>
+              <ul>
+                  <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                  <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                  <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</body>
+```
+
+Fijate como tenemos organizado el HTML en este punto:
+* Contenedor: Encapsula todo el contenido.
+  * Calculadora: Encapsula el formulario.
+  * Detalle: Encapsula la explicacion del calculo.
+
+Ahora, vamos a agregar los siguientes estilos al CSS:
+
+```css
+#calculadora{
+    background: white;
+    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#detalle{
+    background: #FF416C;
+    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: #f6f5f7;
+}
+```
+La clave para lograr el posicionamiento que buscamos es la propiedad `float: left;`, combinada con el ancho del 50% del contenedor padre.
+
+Ademas de posicionar correctamente el contenido, en estas lineas ya definimos los colores apropiados, pero si prestas atención vas a ver que el contenido dentro de los divs esta centrado horizontalmente, pero no verticalmente.
+
+Si te fijas en el HTML que estuvimos escribiendo, el contenido de ambas secciones esta encapsulado en dos `divs`. Tenemos por un lado los divs calculadora y detalle, pero dentro de cada uno tenemos otros divs.
 
 ## Clases
 
 Ya vimos como los selectores de etiqueta seleccionan todos los elementos con la misma etiqueta, y los selectores de ID seleccionan únicamente un elemento con el id especificado.
 
-Ahora, que hacemos si necesitamos estilizar solo algunos de los `div`, pero no todos. Por ejemplo, en nuestra página usamos `div` para agrupar las imagenes que tienen que ir a la izquierda y a la derecha, pero también usamos multiples `div` para organizar el resto de la página.
+Ahora, que hacemos si necesitamos estilizar solo algunos de los `div`, pero no todos. Por ejemplo, los `divs` dentro de las secciones de calculadora y detalle.
 
-Fijate en esta sección del HTML:
+Para resolver esto vamos a usar otro atributo: `class`.
+
+### Actividad:
+{: .no_toc }
+
+Modifica el HTML para que quede asi:
 
 ```html
-<div class="contenedor">
-  <img class="componente" alt="componente" id="componente1" src="./images/componente_1.png" />
-</div>
-
-<div class="contenedor">
-  <img class="producto" alt="producto" id="producto1" src="./images/producto_1.png" />
-</div>
+<body>
+  <div id="contenedor">
+      <div id="calculadora">
+          <div class="contenido">
+              <h1>Hidratación Basal</h1>
+              <p >Completa todos los datos</p>
+              <input type="number" placeholder="Peso en kg" />
+              <p>* Debe completar todos los datos</p>
+              <button>Calcular</button>
+              <p>71cc/h</p>
+              <p>m+m/2 : 105cc/h</p>
+          </div>
+      </div>
+      <div id="detalle">
+          <div class="contenido">
+              <h1>¿Como se calcula?</h1>
+              <ul>
+                  <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                  <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                  <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</body>
 ```
 
-Para cambiar el estilo de los elementos div que contienen a las imagenes, tenemos que utilizar un selector de clase, y para ello necesitamos agregar un atributo nuevo en el HTML.
+Para cambiar el estilo de los elementos div que tienen el atributo `class="contenido"`, tenemos que utilizar un selector de clase.
 
 Para usar los selectores de ID usamos el atributo `id`. Ahora necesitamos usar el atributo `class`, que ya incluimos cuando hicimos el HTML.
 
 La clase es similar al id, pero en este caso se puede repetir. Esto significa que como vemos en el extracto de código de arriba, podemos tener muchos elementos que pertenecen a la misma clase.
 
-{: .note }
-Los `div` con clase contenedor son padres de los elementos `img` que muestran las imagenes. Hacemos esto para poder tener mas control sobre como queremos que las imagenes se vean e interactuen. Esto será importante en la clase de Javascript
-
-Fijate que cada elemento en el HTML tiene una combinación de identificadores y clases. Los identificadores aquí son utilizados por el código JavaScript que agregarás más adelante para manipular la ubicación del elemento (para poder arrastrarlo). Las clases, sin embargo, dan a todos los elementos un estilo determinado.
-
-En el documento HTML utilizamos varias clases para identificar distintos elementos.
-
-✅ Si mirás el documento HTML, podes identificar todas las clases que utilizamos y a que tipo de elementos corresponden?. Por ejemplo, que clase tienen las imagenes de productos? y las imagenes de comonentes como el precio o la descripcion?
-
-### Actividad:
-{: .no_toc }
-
-Para mejorar el estilo de nuestros elementos, agregá lo siguiente a tu archivo `style.css`:
+Para centrar el contenido verticalmente, vamos a escribir el siguiente código en el CSS:
 
 ```css
-.contenedor {
-  position: relative;
-  height: 6%;
- }
-
-.contenedor2 {
-  position: relative;
-  height: 18%;
-  left: -10px;
-}
-
-.reducido {
-  height: 4%;
-}
-
-.componente {
-  position: absolute;
-  max-width: 100%;
-  max-height: 150%;
-  z-index: 3;
-}
-
-.producto {
-  position: absolute;
-  max-width: 200%;
-  max-height: 200%;
-  z-index: 2;
+.contenido{
+    /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
 }
 ```
 
-{: .concept }
-Para aplicar estilos a toda una clase, usamos un selector de clase, que lleva un punto `.` antes del nombre de la clase: `.componente {  }`. Esto aplicará los estilos correspondientes a todos los elementos de esa clase.
+Con esto, terminamos el posicionamiento de las partes del HTML! Ahora solo queda modificar algunos estilos mas.
 
-En este fragmento se destaca la mezcla de posicionamiento relativo y absoluto, que cubriremos en la siguiente sección. Echá un vistazo a la forma en que se manejan las alturas por porcentajes:
+## Cambiando los estilos de elementos HTML
 
-Además de las clases diferencias para componentes y productos vamos a usar otra más para los componentes que son pequeños, esto debido a que no todas las imágenes de componentes tienen el mismo tamaño, por lo que no se ve tan bien si a todos les ponemos el mismo alto (height).
+Lo siguiente que vamos a hacer es cambiar el estilo por defecto que tenemos en el `<input>` y `<button>`:
 
-La idea es que los elementos se muestren en ambas columnas sin necesidad de desplazarse verticalmente, o al menos no mucho.
+```css
+input {
+	width: 70%;
+    padding: 12px 15px;
+    border: none;
+    background-color: #eee;
+}
 
-Para el componente en sí definimos un ancho máximo del 100%, mientras que a	que para el producto el ancho máximo será 200%. Esto permite que en pantallas mas pequeñas las imagenes se hagan mas pequeñas. Intentá cambiar el tamaño de tu navegador; los elementos permanecen en sus contenedores pero se reducen para adaptarse.
+button {
+  font-size: 15px;
+	font-weight: bold;
+	padding: 12px 45px;
+	border-radius: 30px;
+	background-color: #FF416C;
+	border: 1px solid #FF416C;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: transform 20ms ease-in;
+}
 
-![crear-archivo](images/tamaño-browser.gif)
+button:active {
+	transform: scale(0.95);
+}
+```
 
-También es notable el uso del índice z, que controla la altitud relativa de un elemento, para los componentes ponemos un índice superior al de los productos de manera que si los superponemos el componente se vea por encima del producto.
+✅ Escribi estos estilos uno a uno y fijate que cambia con cada linea para entender para que sirven.
 
----
+Por ultimo, vamos a volver a tocar los estilos del contedor para darle un borde redondeado y una sombra:
 
-# Posicionamiento CSS
+```css
+#contenedor{
+  width: 900px;
+  height: 500px;
+  text-align: center;
+  /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden; 
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
+}
+```
 
-Mezclar propiedades de posición (hay posiciones estáticas, relativas, fijas, absolutas y pegajosas) puede ser un poco complicado, pero cuando se hace correctamente, te da un buen control sobre los elementos de tus páginas.
+Ya estamos terminando! solo nos falta modificar los estilos de los mensajes de error y de los resultados.
 
-Los elementos de posición absoluta se colocan en relación con sus antepasados ​​colocados más cercanos y, si no hay ninguno, se colocan de acuerdo con el cuerpo del documento.
-
-Los elementos de posición relativa se colocan según las direcciones del CSS para ajustar su ubicación lejos de su posición inicial.
-
-En nuestra muestra, el "contenedor" es un elemento de posición relativa que se coloca dentro de un tablero de posición absoluta. El comportamiento resultante es que los tableros de las barras laterales se sujetan a izquierda y derecha, y el contenedor se encaja, ajustándose dentro de las barras laterales, dando espacio para que lo elementos se coloquen en una fila vertical.
-
-> El `elemento` en sí también tiene un posicionamiento absoluto, necesario para que sea arrastrable, como descubrirás en la siguiente lección.
-
-✅ Experimentá cambiando los tipos de colocación de los tableros laterales y el contenedor. ¿Qué pasa?
-
-# Diseñando con CSS
-
-Ahora usarás lo que aprendiste para construir tarjeta que va en el centro de la página, ¡todo usando CSS!
-
-En la sección de Introducción a HTML habíamos agregado esta sección al HTML:
+Vamos a hacer esto, vamos a tener que agregar un ID para el mensaje de error, y clases para los resultados. El HTML deberia quedar asi:
 
 ```html
-<div id="layout">
-  <div class="rotulo">
-      <p class="titulo">Layout</p>
-  </div>
-  <div class="layout"></div>
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="calculadora">
+                <div class="contenido">
+                    <h1>Hidratación Basal</h1>
+                    <p class="item">Completa todos los datos</p>
+                    <input class="item" id="peso" type="number" placeholder="Peso en kg" />
+                    <p class="item" id="error">* Debe completar todos los datos</p>
+                    <button class="item" id="calcular">Calcular</button>
+                    <p class="item resultado" id="flu">71cc/h</p>
+                    <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
+                </div>
+            </div>
+            <div id="detalle">
+                <div class="contenido">
+                    <h1>¿Como se calcula?</h1>
+                    <ul>
+                        <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                        <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                        <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
 ```
 
-Ahí tenemos tres clases nuevas:
-* `class="layout"`: Este elemento será la tarjeta en sí, el espacio donde podremos arrastrar los elementos para diseñar nuestra anuncio del producto.
-* `class="rotulo"`: Este `div` será un rótulo donde pondremos un titulo para nuestra tarjeta.
-* `class="titulo"`: Este elemento nos permitirá editar los estilos del texto que pongamos en el rótulo, en este caso: Layout.
-* `id="layout"`: En este caso usamos un id en lugar de una clase, y se trata del elemento que contiene toda la tarjeta.
-  
-### Actividad:
-{: .no_toc }
-
-Vamos a agregar algunos estilos para ir formando la tarjeta del centro, copiá el siguiente código en tu CSS:
+Para cambiar el estilo tenemos que hacer lo siguiente:
 
 ```css
-.layout {
-  height: 80%;
-  width: 45%;
-  border: 2px solid #3a241d;
-  border-radius: 1rem;
-  position: absolute;
-  opacity: 0.5;
-  z-index: 1;
-  margin: auto;
-  left: 0px;
-  right: 0px;
+#error{
+    color: red;
+    font-weight: bold;
+    display: none;
 }
 
-.rotulo {
-  width: 45%;
-  height: 5%;
-  background: #C4D7E0;
-  position: absolute;
-  opacity: 0.7;
-  z-index: 1;
-  margin: auto;
-  left: 0px;
-  right: 0px;
-  border-radius: 1em 1rem 0px 0px;
-  text-align: center;
-  color: #3a241d;
-}
-
-.titulo {
-  position: relative;
-  display: inline;
-  top: 0.5rem;
+.resultado{
+    color: #0A81D1;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
 }
 ```
-✅ Jugá un poco con las distintas propiedades para ver que cosas cambian. Importante! cuando algo cambie identificá cual fue el elemento que cambió y porqué.
 
-Observá los porcentajes de ancho y alto de los elementos del layout y cómo cada elemento está absolutamente posicionado en el centro, esto se logra mediante la combinación de los siguientes elementos:
-
-```css
-margin: auto;
-left: 0px;
-right: 0px;
-```
-
-✅ Intentá cambiar los colores y la opacidad de los elementos.
-
+Fijate que con `display: none` lo que hacemos es ocultar los elementos para que no se vean al principio, y mas adelante vamos a modificar estas propiedades con javascript.
 ---
 
-Terminamos! La página web debería haberte quedado mas o menos así:
-
-![diseño terminado](images/disenho-terminado.png)
+Terminamos! La página web debería haberte quedado mas o menos como planteamos en la sección de requerimientos.
