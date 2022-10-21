@@ -7,7 +7,7 @@ nav_order: 1
 
 # ¿Qué es programación?
 
-La programación es el proceso de escribir instrucciones para una computadora. Escribimos estas instrucciones con un lenguaje de programación, que luego es interpretado por el dispositivo. Estos conjuntos de instrucciones pueden recibir varios nombres:  programa, programa de computadora, aplicación (app) y ejecutable son algunos nombres populares.
+La programación es el proceso de escribir instrucciones para una computadora. Las instrucciones se escriben en un lenguaje de programación, que luego es interpretado por el computador. Estos conjuntos de instrucciones pueden recibir varios nombres:  programa, programa de computadora, aplicación (app) y ejecutable, etc. 
 
 Un programa puede ser cualquier cosa que esté escrita con código; Los sitios web, los juegos y las aplicaciones para teléfonos son programas. 
 
@@ -15,8 +15,13 @@ Un programa puede ser cualquier cosa que esté escrita con código; Los sitios w
 
 ---
 # ¿Qué es lenguaje de programación?
+Todo lo que hacemos en un computador o telefono inteligente tiene algún tipo de código diciendole qué tiene que hacer. 
+Pero, alguna vez te preguntaste cómo está escrito? Así como hay miles de idiomas en el mundo en el mundo digital hay muchos lenguajes de programación, y son estos los que hacen funcionar  gran parte de la tecnología que usamos hoy en día. 
 
-Los lenguajes de programación permiten a los desarrolladores escribir instrucciones para una computadora. Las computadoras solo pueden entender valores binarios (1 y 0) y, para la mayoría de los desarrolladores, esa no es una forma muy eficiente de comunicarse. Los lenguajes de programación son el vehículo para la comunicación entre humanos y computadoras.
+Así como los idiomas son el mecanismo mediante el cual nos comunicamos entre humanos, los lenguajes de programación son el vehículo para la comunicación entre humanos y computadoras.
+
+{: .important }
+Un lenguaje de programación es un sistema estructurado de instrucciones, el cual está conformado por conjuntos de símbolos, palabras claves, reglas semánticas y sintácticas que permiten el entendimiento entre un programador y una máquina. Básicamente, lo que nos ofrece un lenguaje de programación es la posibilidad de darle instrucciones a la computadora y hacer cosas con ella
 
 Los lenguajes de programación vienen en diferentes formatos y pueden servir para diferentes propósitos. Por ejemplo, JavaScript se usa principalmente para aplicaciones web, mientras que Bash se usa principalmente para sistemas operativos.
 
@@ -60,3 +65,4 @@ back add r0,r1
  bne back
  end
 ```
+✅ Observá la diferencia. Un lenguaje de programación de alto nivel expresa las instrucciones de forma mas entendible para nosotros los humanos.  

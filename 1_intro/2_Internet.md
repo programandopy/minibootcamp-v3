@@ -46,25 +46,29 @@ La front-end es la **parte que el usuario puede ver en el sitio** (lo que se ve)
 
 Por ejemplo, cuando entramos a Facebook, podemos ver los colores y el formato del contenido, eso sería la parte del front-end; la parte del back-end es la que decide qué contenido mostrar, y saca toda esta información alojada en una base de datos. 
 
-### Tecnologías del Frontend
+## Tecnologías del Frontend
 **La parte de front-end usualmente requiere el uso de estas tres tecnologías:**
 ![tecnologias-frontend](images/html-css-jscript.png){: width="650" }{: .center-image}
 
 
-#### HTML - El esqueleto 
-HTML ("Hypertext Markup Language") no es un lenguaje de programación. Es un lenguaje de marcado que le dice a los navegadores web cómo estructurar las páginas web que estás visitando.
+### HTML - El esqueleto 💀 
+Estrictamente hablando, HTML no es un lenguaje de programación, sino un lenguaje de marcado que define la estructura de tu contenido en un sitio web. En concreto, consiste en una serie de elementos utilizados para encerrar diferentes partes del contenido para que se vean o se comporten de una determinada manera, lo que lo convierte en el esqueleto del sitio web.
 
-En su corazón, HTML es un lenguaje muy sencillo compuesto de elementos, que se pueden aplicar a piezas de texto para darles un significado diferente en un documento (¿Esto es un párrafo? ¿Esto es una lista con viñetas? ¿Esto es parte de una tabla?), estructura un documento en secciones lógicas (¿Tiene una cabecera? ¿Tres columnas de contenido? ¿Un menú de navegación?), e incrusta contenido como imágenes y vídeos en una página. Este módulo introducirá los dos primeros de estos, e introduce conceptos fundamentales y la sintaxis que necesitas para entender HTML.
+Los navegadores web -Chrome, Firefox, Safari, Opera, etc.- leen e interpretan ese código HTML del que están hechos los sitios web con el objetivo de mostrar un contenido que sea entendible para los usuarios que lo visitan. ¿Qué significa? Cuando accedemos a cualquier sitio web, el navegador a través del cual lo hacemos, pide al servidor donde está alojado dicho sitio que envíe el documento. Este es un documento HTML que el navegador interpreta para mostrar el contenido al usuario final.
 
-#### CSS
+### CSS 💅🏼
 
-Las Hojas de estilo en cascada (del ingles Cascading Stylesheets CSS) es la siguiente tecnología que aprenderemos después de HTML. Mientras que HTML se utiliza para definir la estructura y la semántica del contenido, CSS se usa para darle estilo y posicionarlo visualmente. CSS se puede usar, por ejemplo, para cambiar la fuente, el color, el tamaño y el espaciado del contenido, para formar multiples columnas, añadir animaciones y otros elementos decorativos.
+CSS son las siglas en inglés para «hojas de estilo en cascada» (Cascading Style Sheets). Básicamente, es un lenguaje que maneja el diseño y presentación de las páginas web, es decir, cómo lucen cuando un usuario las visita. Funciona junto con el lenguaje HTML que se encarga del contenido básico de las páginas.
+Se les denomina hojas de estilo «en cascada» porque puedes tener varias hojas y una de ellas con las propiedades heredadas (o «en cascada») de otras.
+
+### Javascript 💃🏻
+JavaScript es un lenguaje de programación que se utiliza principalmente del lado del cliente, ya que permite crear la interfaz de usuario de sitios web, aunque también se puede usar para realizar tareas del lado del servidor, a través de Node.js.
+
+¿Y qué podemos crear del lado del front-end? Un sitio web dinámico que incorpore lógica de presentación, efectos, animaciones, acciones que se activan al pulsar botones y ventanas con mensajes de aviso al usuario, por ejemplo.
 
 
-#### Javascript
-JavaScript es un lenguaje de programación que te permite implementar cosas complejas en páginas web. Cada vez que una página web hace algo más que sentarse ahí y mostrar información estática para que la veas — mostrando actualizaciones de contenido oportunas, mapas interactivos, gráficos animados 2D/3D, desplazando máquinas reproductoras de video, o más, puedes apostar que probablemente JavaScript esté involucrado .
+## Conclusión
+Con estos conceptos, deberíamos entender que para cualquier sitio, siempre se utilizan estas herramientas de front-end. 
 
-
-Para cualquier sitio, siempre se utilizan estas herramientas de front-end. 
-Es en el área de backend donde hay una gran variedad de opciones y herramientas que se pueden utilizar. 
+Es en el área de backend donde hay una gran variedad de opciones y herramientas que se pueden utilizar.
 
