@@ -564,6 +564,7 @@ Para cambiar el estilo tenemos que hacer lo siguiente:
 ```
 
 Fijate que con `display: none` lo que hacemos es ocultar los elementos para que no se vean al principio, y mas adelante vamos a modificar estas propiedades con javascript.
+
 ---
 
 Terminamos! La página web debería haberte quedado mas o menos como planteamos en la sección de requerimientos.
