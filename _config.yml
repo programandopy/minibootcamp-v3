@@ -19,3 +19,5 @@ callouts:
   note:
     title: Nota
     color: purple
+  highlight:
+    color: yellow

@@ -128,16 +128,24 @@ Volvé a escribir tu bucle de vector utilizando una de estas técnicas.
 Las vectores en JavaScript tienen muchos métodos adjuntos, extremadamente útiles para la manipulación de datos. [Leé sobre estos métodos](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array){:target="_blank"} y probá algunos de ellos (como push, pop, slice y splice) en una vector de su creación.
 
 
-## Tarea - Hacer bucle en un vector
+## Tarea - Iterar sobre un vector
 
 ### Instrucciones
 
-Creá un programa que enumere cada tercer número entre 1 y 20 y lo imprima en la consola.
+| Planteamiento del Problema | Ejemplo de Resultado | 
+| ------------ | --- |
+|Creá un arreglo con nombres de especies de animales y enumerá cada tercer elemento en el arreglo.| 1: "Mamba Verde", 2: "Mamba negra", 3: "Pez globo", ...|
 
-> SUGERENCIA: usá un bucle for y modificá la expresión-iteración
+{: .highlight }
+💡 Sugerencia: podrías utilizar un bucle for y modificar la expresión-iteración
+
+{: .fs-1 }
+_Ejemplo de nombres: "Viuda Negra", "Cobra Real", "Mamba Verde", "Araña de tela de embudo", "Araña reclusa parda", "Mamba negra", "Araña de arena de seis ojos", "Serpiente tigre", "Pez globo","Rana punta de flecha", "Araña brasileña", "Serpiente marrón", "Pez piedra", "Escorpión amarillo", "Gusano de la muerte", "Pulpo de anillos azules", "Caracol cono", "Taipán", "Rana dardo dorada", "Avispa de mar"._
+
+
 
 ### Rúbrica
 
 | Criterios | Ejemplar | Adecuado | Necesita mejorar |
-| -------- | --------------------------------------- | ------------------------ | ------------------------------ |
+| --------- | --------- | --------- | --------- |
 | | El programa se ejecuta correctamente y está comentado | Programa no comentado | El programa está incompleto o con errores |
