@@ -7,25 +7,25 @@ nav_order: 1
 
 # ¿Qué es programación?
 
-La programación es el proceso de escribir instrucciones para una computadora. Las instrucciones se escriben en un lenguaje de programación, que luego es interpretado por el computador. Estos conjuntos de instrucciones pueden recibir varios nombres:  programa, programa de computadora, aplicación (app) y ejecutable, etc. 
+La programación es el proceso de escribir instrucciones para una computadora. Las instrucciones se escriben en un lenguaje de programación, que luego es interpretado por el computador. Estos conjuntos de instrucciones pueden recibir varios nombres:  programa, programa de computadora, aplicación (app), ejecutable, etc. 
 
-Un programa puede ser cualquier cosa que esté escrita con código; Los sitios web, los juegos y las aplicaciones para teléfonos son programas. 
+Un programa puede ser cualquier cosa que esté escrita con código; los sitios web, los juegos y las aplicaciones para teléfonos son programas. 
 
 ✅ Busca en google: ¿quién fue el primer programador/a informático del mundo?
 
 ---
 # ¿Qué es lenguaje de programación?
-Todo lo que hacemos en un computador o telefono inteligente tiene algún tipo de código diciendole qué tiene que hacer. 
-Pero, alguna vez te preguntaste cómo está escrito? Así como hay miles de idiomas en el mundo en el mundo digital hay muchos lenguajes de programación, y son estos los que hacen funcionar  gran parte de la tecnología que usamos hoy en día. 
+Todo lo que hacemos en un computador o teléfono inteligente tiene algún tipo de código indicándole qué tiene que hacer. 
+Pero, alguna vez te preguntaste, cómo está escrito? Así como hay miles de idiomas en el mundo; en el mundo digital hay muchos lenguajes de programación, y son estos los que hacen funcionar gran parte de la tecnología que usamos hoy en día. 
 
 Así como los idiomas son el mecanismo mediante el cual nos comunicamos entre humanos, los lenguajes de programación son el vehículo para la comunicación entre humanos y computadoras.
 
 {: .important }
-Un lenguaje de programación es un sistema estructurado de instrucciones, el cual está conformado por conjuntos de símbolos, palabras claves, reglas semánticas y sintácticas que permiten el entendimiento entre un programador y una máquina. Básicamente, lo que nos ofrece un lenguaje de programación es la posibilidad de darle instrucciones a la computadora y hacer cosas con ella
+Un lenguaje de programación es un sistema estructurado de instrucciones, el cual está conformado por conjuntos de símbolos, palabras claves, reglas semánticas y sintácticas que permiten el entendimiento entre un programador y una máquina. Básicamente, lo que nos ofrece un lenguaje de programación es la posibilidad de darle instrucciones a la computadora y hacer cosas con ella.
 
 Los lenguajes de programación vienen en diferentes formatos y pueden servir para diferentes propósitos. Por ejemplo, JavaScript se usa principalmente para aplicaciones web, mientras que Bash se usa principalmente para sistemas operativos.
 
-Los Lenguajes de **bajo nivel** generalmente requieren menos pasos que los idiomas de **alto nivel** para que un dispositivo interprete las instrucciones. Sin embargo, lo que hace que los lenguajes de alto nivel sean populares es su legibilidad y compatibilidad. JavaScript se considera un lenguaje de alto nivel.
+Los Lenguajes de **bajo nivel** generalmente requieren menos pasos que los de **alto nivel** para que un dispositivo interprete las instrucciones. Sin embargo, lo que hace que los lenguajes de alto nivel sean populares es su legibilidad y compatibilidad. JavaScript se considera un lenguaje de alto nivel.
 
 El siguiente código ilustra la diferencia entre un lenguaje de alto nivel con JavaScript y un lenguaje de bajo nivel con código ensamblador ARM.
 
@@ -65,4 +65,4 @@ back add r0,r1
  bne back
  end
 ```
-✅ Observá la diferencia. Un lenguaje de programación de alto nivel expresa las instrucciones de forma mas entendible para nosotros los humanos.  
+✅ Observá la diferencia. Un lenguaje de programación de alto nivel expresa las instrucciones de forma mas entendible para los humanos.  
