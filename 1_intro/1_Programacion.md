@@ -9,14 +9,16 @@ nav_order: 1
 
 La programación es el proceso de escribir instrucciones para una computadora. Las instrucciones se escriben en un lenguaje de programación, que luego es interpretado por el computador. Estos conjuntos de instrucciones pueden recibir varios nombres:  programa, programa de computadora, aplicación (app), ejecutable, etc. 
 
-Un programa puede ser cualquier cosa que esté escrita con código; los sitios web, los juegos y las aplicaciones para teléfonos son programas. 
+
+Un programa puede ser cualquier cosa que esté escrita con código; los sitios web, los juegos y las aplicaciones móviles son programas. 
 
 ✅ Busca en google: ¿quién fue el primer programador/a informático del mundo?
 
 ---
 # ¿Qué es lenguaje de programación?
 Todo lo que hacemos en un computador o teléfono inteligente tiene algún tipo de código indicándole qué tiene que hacer. 
-Pero, alguna vez te preguntaste, cómo está escrito? Así como hay miles de idiomas en el mundo; en el mundo digital hay muchos lenguajes de programación, y son estos los que hacen funcionar gran parte de la tecnología que usamos hoy en día. 
+
+Pero, alguna vez te preguntaste, cómo está escrito? Así como hay miles de idiomas en el mundo en el mundo digital hay muchos lenguajes de programación, y son estos los que hacen funcionar gran parte de la tecnología que usamos hoy en día. 
 
 Así como los idiomas son el mecanismo mediante el cual nos comunicamos entre humanos, los lenguajes de programación son el vehículo para la comunicación entre humanos y computadoras.
 
