@@ -1,7 +1,7 @@
 ---
 title: Dinamismo
 has_children: false
-parent: Conceptos avanzados
+parent: Otros Recursos
 nav_order: 1
 ---
 

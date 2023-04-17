@@ -1,9 +1,10 @@
 ---
 title: Menú App
 has_children: false
-nav_order: 9
-has_toc: true
+parent: Otros Recursos
+nav_order: 4
 ---
+
 # Desarrollo de un menu virtual
 
 En esta lección crearemos una aplicación para mostrar el menú de nuestro restaurante, tomando los datos de una planilla de Google Sheets, mediante una API. De esta forma si actualizamos los datos de nuestra planilla, también podremos actualizar los datos de nuestro menú.

@@ -1,8 +1,8 @@
 ---
-title: Tic Tac Toe
-has_children: false
-parent: Eventos en JavaScript
-nav_order: 2
+title: Proyecto Tic Tac Toe
+has_children: true
+nav_order: 8
+has_toc: true
 ---
 
 # Programemos un juego de Ta Te Ti (Tic Tac Toe)
