@@ -57,7 +57,7 @@ Para la inclusión de una nueva clase crear un branch que represente a la clase 
 Donde `nombre-clase` representa a la clase (en camelCase) que se desea incluir, por ejemplo: `clase_speedTyping`.
 
 ### Commits
-Los commits puede estar en español.
+Los commits pueden estar en español.
 
 ### Deploy
 El deploy en Github Pages se hace únicamente a partir de la rama `main` por lo que cualquier clase nueva debe ir al main mediante un Pull Request.
