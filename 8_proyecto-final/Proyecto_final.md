@@ -1,7 +1,7 @@
 ---
 title: Proyecto final
 has_children: false
-nav_order: 10
+nav_order: 9
 has_toc: true
 ---
 # Creación de Proyecto Final

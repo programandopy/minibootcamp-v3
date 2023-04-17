@@ -1,8 +1,8 @@
 ---
-title: Wordle PPY
-has_children: false
-parent: Eventos en JavaScript
-nav_order: 3
+title: Proyecto Wordle PPY
+has_children: true
+nav_order: 7
+has_toc: true
 ---
 
 # Como programar un juego de palabras con JavaScript
