@@ -29,10 +29,10 @@ Los operadores se utilizan para evaluar las condiciones haciendo comparaciones q
 
 | Símbolo | Descripción                                                                                                                                                                  | Ejemplo            |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| `<`     | **Mayor que**: compara dos valores y devuelve el tipo de datos booleano `true` si el valor del lado derecho es mayor que el del izquierdo                                    | `5 < 6 // true`    |
-| `<=`    | **Mayor o igual que**: compara dos valores y devuelve el tipo de datos booleano `true` si el valor del lado derecho es mayor o igual que el del lado izquierdo               | `5 <= 6 // true`   |
-| `>`     | **Menor que**: compara dos valores y devuelve el tipo de datos booleano `true` si el valor del lado izquierdo es mayor que el del derecho                                    | `5 > 6 // false`   |
-| `=>`    | **Menor o igual que**: compara dos valores y devuelve el tipo de datos booleano `true` si el valor del lado izquierdo es mayor o igual que el del lado derecho               | `5 => 6 // false`  |
+| `>`     | **Mayor que**: compara dos valores y devuelve el tipo de datos booleano `true` si el valor del lado izquierdo es mayor que el del lado derecho                                    | `6 > 5 // true`    |
+| `>=`    | **Mayor o igual que**: compara dos valores y devuelve el tipo de datos booleano `true` si el valor del lado izquierdo es mayor o igual que el del lado derecho               | `6 >= 5 // true`   |
+| `<`     | **Menor que**: compara dos valores y devuelve el tipo de datos booleano `true` si el valor del lado izquierdo es menor que el del derecho                                    | `6 < 5 // false`   |
+| `<=`    | **Menor o igual que**: compara dos valores y devuelve el tipo de datos booleano `true` si el valor del lado izquierdo es menor o igual que el del lado derecho               | `6 <= 5 // false`  |
 | `===`   | **Igualdad estricta**: compara dos valores y devuelve el tipo de datos booleano `true` si los valores de la derecha y la izquierda son iguales Y son del mismo tipo de datos | `5 === 6 // false` |
 | `!==`   | **Desigualdad**: compara dos valores y devuelve el valor booleano opuesto de lo que devolvería un operador de igualdad estricta                                              | `5 !== 6 // true`  |
 
@@ -150,7 +150,7 @@ Lo anterior establece que
 - si `primerNumero` es mayor que `segundoNumero`
 - luego asigna `primerNumero` a `mayor`
 - de lo contrario, asigna `segundoNumero`.
-  
+
 La expresión ternaria es solo una forma compacta de escribir el siguiente código:
 
 ```javascript
