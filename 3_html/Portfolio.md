@@ -34,6 +34,6 @@ Es importante que nuestro portafolio contenga las siguientes secciones:
 5. Información de contacto.
 
 {: .important }
-Recorda que este porfolio también es un proyecto que estás mostrando. Dale un toque personal que refleje tu identidad y tus habilidades!
+Recordá que este porfolio también es un proyecto que estás mostrando. Dale un toque personal que refleje tu identidad y tus habilidades!
 
 Como inspiración podes mirar algunos ejemplos en este articulo: https://www.hostinger.es/tutoriales/portafolio-de-programador
