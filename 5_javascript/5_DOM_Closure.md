@@ -20,7 +20,7 @@ nav_order: 5
 
 ---
 
-# Introducción:
+# Introducción
 
 Manipular el DOM, o el "Modelo de objetos de documento", es un aspecto clave del desarrollo web. Según [MDN](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction){:target="_blank"}:
 
