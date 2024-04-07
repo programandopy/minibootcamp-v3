@@ -14,7 +14,7 @@ Esta lección cubre los conceptos básicos de JavaScript, el lenguaje que propor
 # Preparar el proyecto
 
 {: .important }
-Para poder seguir este material paso a paso, podemos crear un nuevo proyecto con una pagina web en blanco, simplemente usar el proyecto que ya teniamos hecho.
+Para poder seguir este material paso a paso, podemos crear un nuevo proyecto con una pagina web en blanco, o simplemente usar el proyecto que ya teníamos hecho.
 
 ### Actividad
 

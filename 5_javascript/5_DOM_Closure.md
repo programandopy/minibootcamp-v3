@@ -1,14 +1,13 @@
 ---
 title: Manipulación del DOM
 has_children: false
-parent: Introducción a JavaScript
+# parent: Introducción a JavaScript
 nav_order: 5
+# nav_exclude: true
 ---
 
 # Proyecto de Diseño Parte 3: Introducción a Manipulación del DOM
 {: .no_toc }
-
-Ahora que tenemos algunos fundamentos de Javascript, podemos aprender los nuevos conceptos mientras retomamos nuestro proyecto de la calculadora.
 
 <details open markdown="block">
   <summary>
@@ -30,13 +29,6 @@ Manipular el DOM, o el "Modelo de objetos de documento", es un aspecto clave del
 > Pensá en el DOM como un árbol, que representa todas las formas en que se puede manipular un documento de página web. Se han escrito varias API (interfaces de programas de aplicación) para que los programadores, utilizando el lenguaje de programación de su elección, puedan acceder al DOM y editarlo, cambiarlo, reorganizarlo y administrarlo de otro modo.
 
 ![representacion DOM](images/dom-tree.png){: width="650" }{: .center-image}
-
-En esta lección, completaremos nuestro proyecto de diseño interactivo creando el JavaScript que permitirá al usuario manipular los elementos en la página.
-
-## Requisito previo:
-
-{: .important }
-Deberías tener el HTML y CSS para tu calculadora terminados. Al final de esta lección, podremos calcular los resultados!.
 
 ### Actividad:
 {: .no_toc }
