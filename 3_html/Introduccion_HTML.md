@@ -6,7 +6,6 @@ has_toc: true
 ---
 
 # Proyecto "Portfolio Web" - Parte 1: Introducción a HTML
-
 {: .no_toc }
 
 <details open markdown="block">

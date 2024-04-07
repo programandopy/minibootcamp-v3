@@ -5,7 +5,6 @@ nav_order: 5
 ---
 
 # Proyecto "Portfolio Web": Introducción a CSS
-
 {: .no_toc }
 
 <details open markdown="block">
@@ -19,7 +18,7 @@ nav_order: 5
 
 ---
 
-# Introducción:
+# Introducción
 
 {: .concept }
 Las hojas de estilos en cascada (CSS) son un mecanismo simple para agregarle estilo (colores, espaciado, tipos de letra, etc.) a un Documento Web (otra forma de referirnos a un archivo html).
@@ -32,6 +31,7 @@ Una organización conocida como _El grupo de trabajo CSS_ ayuda a mantener las e
 En esta lección, agregaremos estilos a nuestra página web y aprenderemos más sobre varios conceptos de CSS: la cascada, la herencia y el uso de selectores, posicionamiento y uso de CSS para estilizar una página.
 
 ## Requisito previo:
+{: .no_toc }
 
 {: .important }
 Deberías tener el archivo HTML del proyecto terminado y listo para darle estilo, fijate en el apartado "Introducción a HTML".
@@ -44,7 +44,6 @@ Las hojas de estilo en cascada incorporan la idea de que los estilos 'se mueven 
 - Los estilos configurados 'en línea' tienen prioridad sobre los configurados en una hoja de estilo externa.
 
 ### Actividad:
-
 {: .no_toc }
 
 Para entender mejor esto, empecemos por cambiar algún estilo en nuestra página web. En este caso, queremos que el título sea de color rojo, y no negro como está ahora.
@@ -78,7 +77,6 @@ Para resolver este problema, usamos "Hojas de estilo externas". Se tratan de arc
 ---
 
 ### Actividad:
-
 {: .no_toc }
 
 En Visual Studio, crea un archivo nuevo llamado `style.css` en la carpeta `portfolio`
@@ -170,7 +168,6 @@ Si guardas todos los cambios y actualizas la página, deberías ver que el eleme
 Ahora que tenemos la hoja de estilos preparada y ya entendemos como y donde escribir CSS, empecemos a ajustar los estilos de nuestra página.
 
 ### Actividad:
-
 {: .no_toc }
 
 En primer lugar, queremos cambiar la fuente del texto, esto es el tipo de letra de todo el texto en nuestra página. Para lograrlo, agregá el siguiente código el archivo CSS:
@@ -230,7 +227,6 @@ Hasta ahora, en el archivo `style.css` solo aplicamos estilos a dos elementos HT
 Los selectores de etiqueta o elementos nos permiten aplicar estilos a los elementos, buscando por sus etiquetas en el archivo HTML. Por ejemplo, cuando usamos el selector `h1 {  }`, estamos seleccionando **TODOS** los elementos de tipo `h1` en el HTML.
 
 ### Actividad:
-
 {: .no_toc }
 
 Vamos a utilizar un selector de elementos para agregarle algunos estilos al `<body>` que queremos que se hereden en todos los elementos.
@@ -285,7 +281,6 @@ Ahora que la barra de navegación esta mas prolija, nos queda ajustar un poco lo
 Para resolver esto vamos a usar otro atributo: `class`.
 
 ### Actividad:
-
 {: .no_toc }
 
 Modifica el HTML para que quede asi la barra de navegación quede asi:
@@ -344,7 +339,6 @@ Con esto, ya tenemos terminada la barra de navegación. Nos falta estilizar un p
 En este punto no hay nada nuevo, vamos a utilizar selectores de etiqueta para cambiar colores y bordes de estos elementos.
 
 ### Actividad:
-
 {: .no_toc }
 
 Primero vamos a ajustar los estilos del encabezado. Básicamente queremos cambiar el color de fondo y centrar el texto.
@@ -373,7 +367,7 @@ section {
 }
 ```
 
-## Con esto nuestro porfolio va tomando forma! solo nos faltan algunas cosas adicionales.
+Con esto nuestro porfolio va tomando forma! solo nos faltan algunas cosas adicionales.
 
 ## Selectores de ID
 
@@ -402,7 +396,6 @@ Para asignar un identificador a un elemento escribimos el atributo en la etiquet
 En el ejemplo vemos como se utiliza el id para nombrar elementos, pero es importante recordar que **el id no puede repetirse**.
 
 ### Actividad:
-
 {: .no_toc }
 
 Nos interesa justificar el texto en la sección "Acerca de mi", para eso podemos usar la propiedad `text-align: justify;`, pero no la podemos poner en el selector de etiqueta que usamos anteriormente (`section { ... }`), porque solo queremos aplicar este estilo a una sección.
@@ -434,7 +427,6 @@ No podemos usar selectores de etiquetas, porque no queremos afectar a los demás
 Para hacer esto podemos combinar el selector de ID con el selector de etiquetas.
 
 ### Actividad:
-
 {: .no_toc }
 
 Para combinar selectores simplemente tenemos que poner todos los selectores que queremos aplicar separados por espacios, asi:
@@ -491,7 +483,7 @@ Y también nos queda hacer lo mismo para la sección de proyectos:
 }
 ```
 
-## Iconos
+# Iconos
 
 Solo nos falta darle algo de estilo a la sección de contactos. Para eso, podemos agregar los iconos de las redes sociales.
 
@@ -525,7 +517,6 @@ En esta hoja de estilos estan definidas muchas clases que se encargan de incluir
 Es importante notar que en todos los casos se estan asignando dos clases: `fa` y `fa-facebook` o la que corresponda. `fa-facebook` defini el icono que se va a mostrar, pero podemos usar la clase `fa` para cambiar la forma en la que se muestran todos estos iconos.
 
 ### Actividad:
-
 {: .no_toc }
 
 Ubicá en el HTML la lista donde se encuentran las redes sociales y agrega algunos ID y clases:
