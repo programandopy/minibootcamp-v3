@@ -3,7 +3,7 @@ title: Manipulación del DOM
 has_children: false
 # parent: Introducción a JavaScript
 nav_order: 5
-# nav_exclude: true
+nav_exclude: true
 ---
 
 # Proyecto de Diseño Parte 3: Introducción a Manipulación del DOM
